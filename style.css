@@ -1,0 +1,12 @@
+#task{
+    width: 300px;
+}
+
+.strike{
+    text-decoration: line-through;
+    color: gray;
+}
+
+li{
+    font-size:1.5em ;
+}
