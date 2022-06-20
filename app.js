@@ -85,7 +85,14 @@ toDoList.addEventListener('click', function(e){
                 }
             }
         } else{
-            savedTodos[i].checked = false;
+            for(let i = 0; i< savedTodos.length; i++){
+                if (savedTodos[i].task === e.target.parentElement.innerText){
+                    savedTodos[i].checked = false;
+                    console.log("input-false", savedTodos);
+                }
+
+
+            }
         }
     } else if (e.target.tagName === 'BUTTON'){
         e.target.parentElement.remove();
